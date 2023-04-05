@@ -266,7 +266,7 @@ footer a:hover{
   height: 419px;
 }
 .img img{
-  width: 337.5px;
+  width:337.5px;
   height: 419px;
 }
 
@@ -279,7 +279,8 @@ footer a:hover{
     background-image: url(./images/mobile/image-header.jpg);
     background-repeat: no-repeat;
     background-size: 375px ;
-    width: 375px;
+    width: 100vw;
+    overflow-x: hidden;
   }
   header{
     height: 350px;
@@ -327,7 +328,7 @@ footer a:hover{
     "mobile"
     "foot";
     width: 375px;
-    height: 5250px;
+    height: 5250px
   }
   section{
     grid-template-areas: 
