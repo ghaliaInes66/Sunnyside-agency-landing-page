@@ -279,8 +279,6 @@ footer a:hover{
     background-image: url(./images/mobile/image-header.jpg);
     background-repeat: no-repeat;
     background-size: 375px ;
-    width: 100vw;
-    overflow-x: hidden;
   }
   header{
     height: 350px;
