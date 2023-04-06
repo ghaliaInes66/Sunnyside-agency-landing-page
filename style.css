@@ -281,7 +281,12 @@ footer a:hover{
     background-size: 375px ;
   }
   header{
+    width: 375px;
     height: 350px;
+  }
+
+  nav{
+    width: 375px;
   }
   
   .imgmob img{
@@ -337,10 +342,7 @@ footer a:hover{
     grid-gap: 50px;
     margin-bottom: 60px;
   }
-  header {
-  width: 375px;
   
-  }
   header img{
     margin-top: 110px;
   }
