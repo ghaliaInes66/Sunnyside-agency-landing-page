@@ -35,6 +35,8 @@ body{
   font-family: var(--font-family-barlow);
   font-size: var(--Font-size);
   font-weight: var(--font-Weight1);
+  width: 100vw;
+  height: 100vh;
 }
 
 h1,h2,h3{
@@ -191,7 +193,7 @@ section{
 }
 .client{
   display: grid;
-  width: 350px;
+  width: 100%;
   color: var(--Very-dark-grayish-blue);
 }
 .name p{
@@ -200,6 +202,10 @@ section{
 }
 .name h3{
   color: var(--Very-dark-desaturated-blue);
+}
+.par p{
+  width: 90%;
+  padding: 20px;
 }
 
 .client img{
@@ -254,19 +260,19 @@ footer a:hover{
 }
 
 .box{
-  width: 675px;
+  width: 50vw;
   height: 540px;
 }
 .image img{
-  width: 675px;
+  width: 50vw;
   height: 540px;
 }
 .img{
-  width: 337.5px;
+  width: 25vw;
   height: 419px;
 }
 .img img{
-  width:337.5px;
+  width:25vw;
   height: 419px;
 }
 
@@ -274,28 +280,32 @@ footer a:hover{
   display: none;
 }
 
-@media screen and (orientation: portrait){
+@media (max-width:550px){
   body{
+    width: 100vw;
+    height: 100vh;
     background-image: url(./images/mobile/image-header.jpg);
     background-repeat: no-repeat;
-    background-size: 375px ;
+    background-size: 100vw 550px;
   }
+
   header{
-    width: 375px;
+    width: 100vw;
     height: 350px;
   }
 
+
   nav{
-    width: 375px;
+    width: 100vw;
   }
   
   .imgmob img{
     display: inline-block;
-    width: 187.5px;
+    width: 50vw;
   }
   .imgmob{
-    width: 187.5px;
-    height: 187.5px;
+    width: 50VW;
+    height: 50VW;
   }
   .milkmob{
     grid-area: milkm;
@@ -310,7 +320,7 @@ footer a:hover{
     grid-area: sugarm;
   }
   .mobile{
-    width: 375px;
+    width: 100%;
     grid-area: mobile;
     display: grid;
     grid-template-areas: 
@@ -330,8 +340,8 @@ footer a:hover{
     "section "
     "mobile"
     "foot";
-    width: 375px;
-    height: 5250px
+    width: 100%;
+    height: 100%;
   }
   section{
     grid-template-areas: 
@@ -347,7 +357,7 @@ footer a:hover{
     margin-top: 110px;
   }
   .box{
-    width: 375px;
+    width: 100%;
     height: auto;
   }
   h1{
@@ -359,11 +369,11 @@ footer a:hover{
     text-align: center;
   }
   .text p,.text h2,.text h5{
-    width: 350px;
+    width: 60%;
     padding-bottom: 40px;
   }
   .image img{
-    width: 375px;
+    width: 100vw;
     height: 375px;
     object-fit: cover;
     
@@ -373,32 +383,39 @@ footer a:hover{
   }
 
   .backtext p,.backtext h2{
-    width: 300px;
+    width: 90%;
     padding-bottom: 40px;
   }
 
   .green{
     background-image: url(./images/mobile/image-graphic-design.jpg);
-    background-size: 375px;
+    background-size: 100VW 555px;
+    height: 555PX ;
+
   }
   .blue{
     background-image: url(./images/mobile/image-photography.jpg);
-    background-size: 375px;
+    background-size: 100vw 555px;
+    height: 555PX;
   }
   section{
-  width:375px ;  
+  width:100vw ;  
   height: auto;
   }
   footer{
-    width: 375px;
+    width: 100vw;
     height: 400px;
   }
-  .img img{
+  .img {
     display: none;
   }
 
   a{
     margin-right: 5px;
   }
+
+ .button{
+  display: none;
+ } 
 
 }
